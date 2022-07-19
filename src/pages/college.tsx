@@ -1,12 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-export default function IndexPage() {
+export default function college() {
   return (
     <Layout>
-      <section>
-        <div>Test</div>
-      </section>
+      <div>college</div>
     </Layout>
   );
 }
