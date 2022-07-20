@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav>
       <div className={styles.container}>
         <Link to="/"><img src={logo} alt="" /></Link>
-        <Link to="/schedule">Schedule</Link>
+        <Link to="/schedule" className='underline'>Schedule</Link>
         <Link to="/high-school">High-School</Link>
         <Link to="/college">College</Link>
         <Link to="/college-career">College-Career</Link>
