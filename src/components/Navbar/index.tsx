@@ -5,17 +5,37 @@ import * as styles from './index.module.css'
 
 export default function Navbar() {
   return (
-    <nav>
-      <div className={styles.container}>
-        <Link to="/"><img src={logo} alt="" /></Link>
-        <Link to="/schedule" className='underline'>Schedule</Link>
-        <Link to="/high-school">High-School</Link>
-        <Link to="/college">College</Link>
-        <Link to="/college-career">College-Career</Link>
-        <Link to="/simulator">Simulator</Link>
-        <Link to="/contact">Contact</Link>
-      </div>
-    </nav>
+    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+  <div className="container flex flex-wrap justify-between items-center mx-auto">
+    <a href="/" className="flex items-center">
+        <img src={logo} className="mr-3 h-6 sm:h-9" alt="Megaula Logo" />
+        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Megaula</span>
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-white-500 rounded-lg md:hidden hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <span className="sr-only">Open main menu</span>
+      <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+        <li>
+          <a href="/schedule" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white underline" aria-current="page">Agenda tu asesoría</a>
+        </li>
+        <li>
+          <a href="/high-school" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Examen Preparatoria</a>
+        </li>
+        <li>
+          <a href="/college" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Examen Universidad</a>
+        </li>
+        <li>
+          <a href="/college-career" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">¿Qué carrera escoger?</a>
+        </li>
+        <li>
+          <a href="/simulator" className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Simuladores</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
   );
 }
 
