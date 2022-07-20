@@ -11,13 +11,13 @@ export default function Layout({ children }: { children: any }) {
     </span>
     <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
-            <a href="/contact" className="mr-4 hover:underline md:mr-6 ">Contact</a>
+            <a href="/contact" className="mr-4 hover:underline md:mr-6 ">Contacto</a>
         </li>
         <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">Aviso de privacidad</a>
+            <a href="/privacy" className="mr-4 hover:underline md:mr-6">Aviso de privacidad</a>
         </li>
         <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">Aviso legal</a>
+            <a href="/legal" className="mr-4 hover:underline md:mr-6">Aviso legal</a>
         </li>
     </ul>
 </footer>
