@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
 import logo from "../images/logo.png";
-import 'tw-elements';
 
 export default function IndexPage() {
   return <Layout><div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
