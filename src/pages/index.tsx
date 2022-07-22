@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import 'tw-elements';
 
 export default function IndexPage() {
   return <Layout>
