@@ -2,14 +2,10 @@
 module.exports = {
   content: [
     "./src/pages/**/*.{js,jsx,ts,tsx}",
-    "./src/components/**/*.{js,jsx,ts,tsx}",
-    "./src/**/*.{html,js}", 
-    "./node_modules/tw-elements/dist/js/**/*.js"
+    "./src/components/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {},
   },
-  plugins: [
-    require('tw-elements/dist/plugin')
-  ],
+  plugins: [],
 }
