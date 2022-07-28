@@ -1,13 +1,14 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../../src/components/Layout/layout"
+import Carousel from "../../src/components/Carousel/carousel";
 
 export default function IndexPage() {
   return (
     <Layout>
-
-      <div className="flex flex-col">
-        <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-          <div className="py-2 inline-block min-w-full sm:px-10 lg:px-40">
+      <Carousel>
+        
+      </Carousel>
+          <div className="py-2 px-44">
             <div className="overflow-hidden">
               <table className="min-w-full text-justify">
                 <tbody>
@@ -55,12 +56,8 @@ export default function IndexPage() {
               </table>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div className="flex flex-col">
-        <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-          <div className="py-2 inline-block sm:px-6 lg:px-8">
+          <div className="py-2 sm:px-6 lg:px-8">
             <div className="overflow-hidden">
               <table className="min-w-full text-center">
                 <tbody>
@@ -68,7 +65,7 @@ export default function IndexPage() {
                     <td className="text-sm font-medium px-6 py-4 whitespace-nowrap">
                       Imagen
                     </td>
-                    <td className="text-sm font-light px-6 py-4 whitespace-nowrap">
+                    <td className="text-sm font-medium px-6 py-4 whitespace-nowrap">
                       En esta sección podrás agendar clases <br />
                       directamente con nosotros en vivo! <br />
                       Manejamos en su mayoría temas de <br />
@@ -83,7 +80,7 @@ export default function IndexPage() {
                       gratuito para tu examen de ingreso <br />a la
                       preparatoria.
                     </td>
-                    <td className="text-sm font-light px-6 py-4 whitespace-nowrap">
+                    <td className="text-sm font-medium px-6 py-4 whitespace-nowrap">
                       Imagen
                     </td>
                   </tr>
@@ -91,7 +88,7 @@ export default function IndexPage() {
                     <td className="text-sm font-medium px-6 py-4 whitespace-nowrap">
                       Imagen
                     </td>
-                    <td className="text-sm font-light px-6 py-4 whitespace-nowrap">
+                    <td className="text-sm font-medium px-6 py-4 whitespace-nowrap">
                       Descubre si esta disponible el curso <br />
                       gratuito para tu examen de ingreso <br />a la universidad.
                     </td>
@@ -105,7 +102,7 @@ export default function IndexPage() {
                       entrevistas con personas egresadas <br />
                       de la carrera que más te gusta.
                     </td>
-                    <td className="text-sm font-light px-6 py-4 whitespace-nowrap">
+                    <td className="text-sm font-medium px-6 py-4 whitespace-nowrap">
                       Imagen
                     </td>
                   </tr>
@@ -113,7 +110,7 @@ export default function IndexPage() {
                     <td className="text-sm font-medium px-6 py-4 whitespace-nowrap">
                       Imagen
                     </td>
-                    <td className="text-sm font-light px-6 py-4 whitespace-nowrap">
+                    <td className="text-sm font-medium px-6 py-4 whitespace-nowrap">
                       ¡PRUEBATE A TI MISMO TU AVANCE <br />
                       Tengo para ti simuladores y tareas lo <br />
                       mas cercanas a tu verdadero <br />
@@ -125,8 +122,6 @@ export default function IndexPage() {
               </table>
             </div>
           </div>
-        </div>
-      </div>
     </Layout>
   );
 }
